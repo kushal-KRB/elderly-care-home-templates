@@ -19,6 +19,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;   /* 👈 makes it sticky */
+      top: 0;             /* 👈 sticks to top */
+      z-index: 1000;      /* 👈 keeps it above other content */
     }
     header h1 { margin: 0; font-size: 1.5rem; }
     nav a {
