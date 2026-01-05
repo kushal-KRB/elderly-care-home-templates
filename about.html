@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Elderly Care Home</title>
 
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
   <style>
     body {
       margin: 0;
@@ -14,7 +17,6 @@
       line-height: 1.6;
     }
 
-    /* ===== Sticky Navbar ===== */
     header {
       background: #2d6a4f;
       color: white;
@@ -43,7 +45,6 @@
       text-decoration: underline;
     }
 
-    /* ===== Hero ===== */
     .hero {
       background: linear-gradient(135deg, #2d6a4f, #40916c);
       height: 220px;
@@ -57,6 +58,7 @@
       color: #f4d35e;
       font-size: 2.2rem;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      text-align: center;
     }
 
     .container {
@@ -67,14 +69,17 @@
 
     section {
       background: white;
-      padding: 1.5rem;
+      padding: 1.8rem 1.5rem;
       margin-bottom: 2rem;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    h2 {
+    section h2 {
       color: #2d6a4f;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     /* ===== Vision & Mission ===== */
@@ -91,7 +96,7 @@
       text-align: center;
     }
 
-    /* ===== Achievements ===== */
+    /* Add icons to achievements */
     ul.achievements {
       list-style: none;
       padding: 0;
@@ -103,9 +108,13 @@
       margin-bottom: 0.6rem;
       border-left: 6px solid #2d6a4f;
       border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 500;
     }
 
-    /* ===== Team Section (Week-2) ===== */
+    /* Team Section */
     .team {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -119,6 +128,11 @@
       background: #f9fffc;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
     }
 
     .team-card img {
@@ -127,6 +141,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 0.6rem;
+      border: 3px solid #2d6a4f;
     }
 
     .team-card h3 {
@@ -162,13 +177,13 @@
 </header>
 
 <div class="hero">
-  <h2>About Our Care Home</h2>
+  <h2><i class="fas fa-hands-helping"></i> About Our Care Home</h2>
 </div>
 
 <div class="container">
 
   <section>
-    <h2>History of the Care Home</h2>
+    <h2><i class="fas fa-history"></i> History of the Care Home</h2>
     <p>
       Established in 2005, our care home provides a safe and nurturing environment
       where seniors receive professional healthcare with dignity and compassion.
@@ -176,30 +191,30 @@
   </section>
 
   <section>
-    <h2>Vision & Mission</h2>
+    <h2><i class="fas fa-eye"></i> Vision & Mission</h2>
     <div class="vision-mission">
       <div class="card">
-        <h3>Our Vision</h3>
+        <h3><i class="fas fa-bullseye"></i> Our Vision</h3>
         <p>To be the most trusted elderly care provider.</p>
       </div>
       <div class="card">
-        <h3>Our Mission</h3>
+        <h3><i class="fas fa-heart"></i> Our Mission</h3>
         <p>To deliver compassionate, personalized care.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Achievements & Certifications</h2>
+    <h2><i class="fas fa-award"></i> Achievements & Certifications</h2>
     <ul class="achievements">
-      <li>National Health & Care Authority Certified</li>
-      <li>Best Elderly Care Facility – 2022</li>
-      <li>ISO 9001:2015 Certified</li>
+      <li><i class="fas fa-check-circle"></i> National Health & Care Authority Certified</li>
+      <li><i class="fas fa-check-circle"></i> Best Elderly Care Facility – 2022</li>
+      <li><i class="fas fa-check-circle"></i> ISO 9001:2015 Certified</li>
     </ul>
   </section>
 
   <section>
-    <h2>Meet Our Care Team</h2>
+    <h2><i class="fas fa-users"></i> Meet Our Care Team</h2>
     <div class="team">
       <div class="team-card">
         <img src="images/anita.jpg" alt="Care Manager">
